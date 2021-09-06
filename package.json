@@ -1,0 +1,39 @@
+{
+  "name": "@toplast/generator",
+  "version": "0.1.0",
+  "description": "Collage generator for Toplast",
+  "keywords": [
+    "collage",
+    "lastfm",
+    "music",
+    "scrobble",
+    "spotify",
+    "toplast"
+  ],
+  "homepage": "https://github.com/castilh0s/generator",
+  "author": {
+    "email": "henrique@castilhos.dev",
+    "name": "Henrique de Castilhos",
+    "url": "https://castilhos.dev"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "start": "ts-node src/themes/grid/grid.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "sharp": "^0.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "@types/sharp": "^0.28.6",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
