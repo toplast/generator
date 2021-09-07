@@ -1,6 +1,6 @@
 {
   "name": "@toplast/generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Collage generator for Toplast",
   "keywords": [
     "collage",
@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "start": "ts-node src/themes/grid/grid.ts",
-    "build": "tsc"
+    "build": "rm -rf ./dist && tsc && cp -r ./src/assets ./dist/assets"
   },
   "dependencies": {
     "canvas": "^2.8.0",
